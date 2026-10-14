@@ -1,0 +1,13 @@
+{
+  "name": "toon",
+  "owner": {
+    "name": "TOON Protocol"
+  },
+  "plugins": [
+    {
+      "name": "toon-spinner",
+      "source": "./",
+      "description": "TOON Protocol brand spinner for Claude Code (terminal and desktop app)"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "toon-spinner",
+  "version": "1.0.0",
+  "description": "TOON Protocol brand spinner for Claude Code (terminal and desktop app)",
+  "author": {
+    "name": "TOON Protocol"
+  }
+}

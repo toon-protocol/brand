@@ -1,0 +1,29 @@
+schema_version: 1
+slug: toon
+name: TOON Protocol
+one_liner: "An open network where your app or agent runs on your own machine and gets paid for every request."
+tagline: ""
+archetype: ""
+status: draft
+stage: pre-launch
+industry: "developer infrastructure / payments protocol"
+languages: [en]
+links:
+  domain: "toon.ar.io"
+  repo: "https://github.com/toon-protocol/brand"
+created: 2026-10-14
+updated: 2026-10-14
+version: 1
+artifacts:
+  context: true
+  naming: false
+  strategy: false
+  architecture: false
+  identity: false
+  voice: false
+  messaging: false
+  positioning: false
+  story: false
+  guidelines: false
+  audit: false
+  mod: true

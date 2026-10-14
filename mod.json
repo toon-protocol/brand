@@ -1,0 +1,14 @@
+{
+  "primary": "#c9a24a",
+  "desktop_word": "#a8842c",
+  "logo_svg": "assets/toon-icon.svg",
+  "logo_light_svg": "assets/toon-icon-tile.svg",
+  "words": {
+    "thinking": ["Thinking", "Reading the spec", "Working it out"],
+    "tool-use": ["Running", "Reading", "Checking", "Routing"],
+    "tool-input": ["Writing", "Signing"],
+    "responding": ["Writing", "Answering", "Wrapping up"],
+    "requesting": ["Connecting", "Opening a channel", "Peering"]
+  },
+  "done": ["Settled", "Paid", "Shipped", "Done"]
+}
