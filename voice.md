@@ -54,9 +54,9 @@ Name things by their defined names, give numbers as numbers, and say what a comm
 - **Don't**: "Payments are safe and you're always in control."
 
 **Honest about state**
-Say what is live and what isn't, in the same breath as the claim. Devnet is devnet. Test tokens are test tokens.
-- **Do**: "Devnet. The faucet funds it with test tokens."
-- **Don't**: "Start earning today." (on a page that runs on mock USDC)
+Say what is live and what isn't, in the same breath as the claim. Mainnet is mainnet. Devnet is devnet. Test tokens are test tokens.
+- **Do**: "Mainnet on Base and Solana. Devnet for testing; the faucet funds it with test tokens."
+- **Don't**: "Start earning today." (on a devnet page, or anywhere it implies paid traffic that isn't there)
 
 **Unhyped**
 No superlatives, no "revolution", no future-of-anything. The strongest TOON sentences are the plainest ones.
@@ -136,7 +136,7 @@ Every page should leave the reader able to *do* something. Show the command, the
 
 **Humor**: Rare and dry. It comes only from exact understatement. No puns on "toon", no cartoons, no memes, no emoji in product copy. Not funny at the operator's expense, and never about money lost.
 
-**Claims**: Every claim is either live, or labeled with when it will be ("next: mainnet"). If you can't show it in a terminal or point to it in the source, cut it.
+**Claims**: Every claim is either live, or labeled with when it will be ("next: independent operators"). If you can't show it in a terminal or point to it in the source, cut it.
 
 ---
 
@@ -147,7 +147,7 @@ Every page should leave the reader able to *do* something. Show the command, the
 | Website homepage | The tightest version. Outcome plus absences, then the command | "Your machine. Paid per request. No cloud · no domain · no open port." |
 | Docs / README | Spec voice. Define a term once, then use it. Show input and printed output | "`join` peers your connector toward the network's hub and opens the channel that pays for the hop." |
 | Social media | Changelog voice. One shipped fact per post, with a command or number. Dry, no emoji, no hashtags beyond one | "Every `toon` command now takes `--json` and prints exactly one JSON document." |
-| Email | Newsy and short. Subject is the change, body is what to run | Subject: "Mainnet settlement is live." Body: "Here's what changed and the one command to move your node." |
+| Email | Newsy and short. Subject is the change, body is what to run | Subject: "The store is priced on mainnet." Body: "Here's the price and the one command to pay it." |
 | Support / Discord | Plain and patient, and precise about state. Ask for `toon status --json` before guessing | "Can you paste `toon status --json`? That shows which connector stopped and how often it restarted." |
 | Error messages / CLI | Literal. What happened, the number, what to do next. No apology, no blame | "Refused: this command pays 1,200,000 and today's spending limit has 400,000 left." |
 | Spinner / status words | Single real states | "Routing" · "Signing" · "Settled" |
@@ -174,7 +174,7 @@ Every page should leave the reader able to *do* something. Show the command, the
 **3. Status honesty**
 > **Before**: "Start earning USDC from your home server today."
 >
-> **After**: "Live on devnet: settles on Base Sepolia and Solana devnet with test tokens. Next: mainnet."
+> **After**: "Live on Base and Solana mainnet, in USDC. Devnet runs on test tokens. This site's own write was paid for; the receipts are on the proof page."
 
 **Why it works**: The honest version costs nothing now and protects every later claim.
 
