@@ -50,7 +50,7 @@ The org holds about 35 repositories. Most of them are parts of one product, a fe
 1. **The stack is already a branded house, informally.** Repos name themselves by what they do (connector, relay, store, swap) and lean on "TOON" in prose. That's right, and it only needs writing down.
 2. **"TOON Network" collides with "the TOON network".** spaceturtle's README says it "runs a node on the TOON network", meaning the payment network. `TOON_Network` means a compute marketplace with its own parties (provider, tenant) and its own glossary. One spoken phrase now names two things.
 3. **TOON Network pulls against the positioning.** positioning.md section 06 says TOON is *not for people who want someone else to run their code*. A tenant leasing a workload on a provider's hardware is exactly that person. From the provider's side it *is* paid self-hosting, but with a different audience and a different promise.
-4. **Names keep changing.** `mill` → `swap`, `townhouse` → `hub` (now archived), and "hub" is still in positioning.md even though the glossary says to avoid it for an agent node. Repo casing is mixed (`toon_cli`, `TOON_Network`, `vibe_station`, `gas-station`, `echo-merchant`).
+4. **Names keep changing.** `mill` → `swap` and `townhouse` → `hub` (now archived). "The network's hub" is still how `toon_cli`'s README names the project-run connector that devnet nodes peer toward. It's a different thing from the archived `hub` product, and the glossary bans "hub" only as a word for an agent node, but one word now means two things. Repo casing is mixed (`toon_cli`, `TOON_Network`, `vibe_station`, `gas-station`, `echo-merchant`).
 5. **The most on-message product has its own name.** spaceturtle carries the positioning sentence almost word for word, and its personality (a turtle in the bar) is something voice.md forbids the master brand ("no cartoons"). That's a reason to keep it separate, not to absorb it.
 
 ---
@@ -126,7 +126,8 @@ TOON  ·  the open network: your machine, paid per request
 - Verbs that are literally true ("pay", "route", "settle") in endorsed and ecosystem names.
 
 **Avoid**
-- "hub", "node" alone, "stack", "full node" for the agent node (glossary). Fix positioning.md's "the network's hub" to "the project's connector" the next time it's edited.
+- "hub", "node" alone, "stack", "full node" for the agent node (glossary).
+- "Hub" for the project-run connector that devnet nodes peer toward. Say "the project's connector": it's accurate, and "hub" makes the network sound centralized. The brand docs use this; `toon_cli`'s README and `docs/end-to-end.md` still say "hub".
 - "gateway", "proxy" or "terminator" for the connector (glossary). The Workload Gateway is a different thing and keeps its name only inside the compute marketplace.
 - The TOON prefix on anything the project doesn't maintain, and "toon" inside the name of new projects (`anytoon` is grandfathered).
 - Category clichés from messaging.md section 07 in any product name: "agentic", "pay", "402", "zap", "mint", "chain", "hub", "router" on its own.
