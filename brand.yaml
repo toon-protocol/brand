@@ -25,6 +25,6 @@ artifacts:
   messaging: true
   positioning: true
   story: true
-  guidelines: false
+  guidelines: true
   audit: false
   mod: true

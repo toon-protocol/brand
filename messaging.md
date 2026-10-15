@@ -56,7 +56,7 @@ The connector on your machine terminates payment the way nginx terminates SSL. Y
 
 **3. Nobody you have to sign up with.**
 Payment routes hop by hop between peered connectors, and anyone can run one. No merchant account, no facilitator, no platform cut, no payout schedule.
-*Proof*: **live** in the protocol. Each packet carries its own claim, so there's no invoice, settle round trip or facilitator call per request. No protocol fee. On devnet, a new agent node peers toward the network's hub, which is a connector like any other. The live mainnet node is the one the project runs. Once there are independent connector operators, add their number, and until then don't imply there are many.
+*Proof*: **live** in the protocol. Each packet carries its own claim, so there's no invoice, settle round trip or facilitator call per request. No protocol fee. On devnet, a new agent node peers toward the project's connector, which is a connector like any other. The live mainnet node is the one the project runs. Once there are independent connector operators, add their number, and until then don't imply there are many.
 
 **4. One binary, built to be run by people and agents.**
 `toon` is the whole agent node: connector, supervisor and CLI. Every command is non-interactive and returns JSON, so an agent can operate it as easily as you can.
