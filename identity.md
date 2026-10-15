@@ -16,8 +16,9 @@ TOON is the network where your own machine is the business, so the identity shou
 
 **The symbol (keep it, as drawn).** Two upright bars sit on a thin line. The charcoal bar, carrying a small cream square, is the message, its header. The gold bar is the value. The grey line and end-blocks are the wire it travels on. It's an exact picture of "a packet that is data and value at once", it's made only of rectangles, and nothing in either competitor report looks like it. Don't redraw the large version.
 
-**The wordmark (to be designed; none exists yet).**
+**The wordmark (drawn; see the files below).**
 - `TOON` in capitals, set in **IBM Plex Sans Condensed Bold** (see 04), then hand-adjusted. Tighten tracking to about −1%, square off the terminals of the T and N, and make the two O's identical.
+  - **Drawn**: Plex Sans Condensed Bold outlined to paths (no font dependency), tracking −1% (−10 units per pair) on top of the font's T/O kerning, one O outline used twice. Plex's T and N already end square, so their terminals are unchanged.
 - **Exploration worth one round**: draw the two O's as squared counters (rounded-rectangle O, radius no more than 15% of the cap height), so the double O echoes the two bars of the symbol. Reject it if it reads as "T00N" or "TDDN" at 24px.
 - "Protocol" is not part of the logo. Where it's needed, it's set separately in Plex Mono Regular at 40% of the wordmark's cap height, in Wire grey.
 - Lockup: symbol left, wordmark right, with the wordmark's cap height equal to the bar height × 0.42. The gap equals one bar width. A stacked lockup is allowed only for square avatars.
@@ -42,6 +43,9 @@ At 16px the wire is 0.4px tall and the gap between the bars is 0.4px, so the bar
 | Full mark, ≥ 64px | `toon-icon.svg`, `toon-icon-tile.svg` | `toon-icon-dark.svg`, `toon-icon-tile-dark.svg` |
 | Two-bar mark, 24–48px (48 grid, even coordinates so 24px lands on whole pixels) | `toon-icon-small.svg`, `toon-icon-small-tile.svg` | `toon-icon-small-dark.svg`, `toon-icon-small-tile-dark.svg` |
 | Favicon, 16px (pixel-placed, always on a tile) | `toon-icon-16.svg` | `toon-icon-16-dark.svg` |
+| Wordmark (Plex Sans Condensed Bold, outlined) | `toon-wordmark.svg` | `toon-wordmark-dark.svg` |
+| Horizontal lockup (two bars, no wire; cap height = bar height × 0.42, gap = one bar width) | `toon-lockup.svg` | `toon-lockup-dark.svg` |
+| Exploration, rejected: squared-O wordmark (reads as "T00N" at 24px) | `toon-wordmark-squared-o.svg` | |
 
 ### Colour variants (required)
 The charcoal bar is 1.23:1 against a dark background (`#1c1f24`), so in dark mode it disappears.
