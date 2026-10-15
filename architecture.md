@@ -12,7 +12,7 @@ The org holds about 35 repositories. Most of them are parts of one product, a fe
 
 | Name (repo) | Audience | Positioning | Current relationship | Equity |
 |---|---|---|---|---|
-| **TOON** (`toon_cli`, binary `toon`) | Primary: developers and agent builders | The agent node: connector, supervisor and CLI in one binary | Uses the parent name, and *is* the parent in practice | Developing (v0.1.0) |
+| **TOON** (`toon_cli`, binary `toon`) | Primary: developers and agent builders | The agent node: connector, supervisor and CLI in one binary | Uses the parent name, and *is* the parent in practice | Developing (v0.2.0) |
 | **connector** | Same, plus connector operators | "A paid reverse proxy" | Descriptor, "the TOON connector" | Developing. Its line ("terminates payments the way nginx terminates SSL") is the brand's best proof |
 | **relay** | Same, plus Nostr builders | "A Nostr relay you get paid to write to" | Descriptor, "the TOON relay" | Developing |
 | **store** | Same | Paid Arweave blob store, and the worked example | Descriptor | Developing (priced on mainnet) |
@@ -138,7 +138,7 @@ TOON  ·  the open network: your machine, paid per request
 
 - **No product tiers.** There is no TOON Pro, Plus or Enterprise. Prices belong to operators, not to TOON, and a paid tier would make TOON a party to the money (positioning section 06).
 - **Networks, not regions.** The only variants are where it settles: **mainnet** (Base, Solana) and **devnet** (Base Sepolia, Solana devnet). Write them as labels, not product names: *"live: Base and Solana mainnet · devnet for testing"*. Never "TOON Testnet" or "TOON Devnet" as a brand.
-- **Versions** are plain semver on the binary (`toon v0.1.0`). No codenames.
+- **Versions** are plain semver on the binary (`toon v0.2.0`). No codenames.
 
 ### Decision tree for something new
 
@@ -176,7 +176,7 @@ TOON  ·  the open network: your machine, paid per request
 - [ ] Positioning check: does the README's first line keep *reachable* and *paid* together and avoid implying TOON holds money?
 - [ ] Add the repo to section 01 of this file in the same PR that makes it public.
 
-**Review cadence**: Look at this file whenever a repo is created or archived in the org, and audit it fully at each minor release of `toon` (v0.2.0 is the next), or every quarter, whichever comes first. The audit checks section 01 against `gh repo list toon-protocol`.
+**Review cadence**: Look at this file whenever a repo is created or archived in the org, and audit it fully at each minor release of `toon` (v0.3.0 is the next), or every quarter, whichever comes first. The audit checks section 01 against `gh repo list toon-protocol`.
 
 ---
 
