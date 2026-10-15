@@ -370,7 +370,7 @@ JetBrains Mono is nearly everywhere (Skyfire, ngrok, Akash), and Inter keeps rea
 
 **Opportunity 5: The honest protocol**
 - *Why it's available*: The category overclaims ("Zero centralization", "60% of the Web", "the internet's payment standard", "unstoppable").
-- *How to take it*: Put a public "live / next" block on the homepage (devnet, mock USDC, Base Sepolia, Solana devnet), use no superlatives, and show real numbers only once they're real. Make honesty how the brand sounds, not a footnote.
+- *How to take it*: Put a public "live / next" block on the homepage (USDC on Base and Solana mainnet, devnet for testing), use no superlatives, and show real numbers only once they're real. Make honesty how the brand sounds, not a footnote.
 
 **Opportunity 6: The coherent brand for what DVMs point at**
 - *Why it's available*: The idea of running a service on your own machine for pay already has believers on Nostr and no brand.

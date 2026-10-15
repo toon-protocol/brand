@@ -185,7 +185,7 @@ Explain by showing one packet travelling from payer to app, hop by hop, with the
 Flat fills, hard edges and one gold, with no gradients, glow, blur, glassmorphism or drop shadows. If an effect hides an edge, remove it.
 
 **State is part of the design.**
-The live/next label, devnet tags and real prices are designed elements: Plex Mono, uppercase, in a Wire-grey outlined chip, placed prominently and never in a footnote. The visual system makes honesty look intentional.
+The live/next label, mainnet and devnet tags and real prices are designed elements: Plex Mono, uppercase, in a Wire-grey outlined chip, placed prominently and never in a footnote. The visual system makes honesty look intentional.
 
 ---
 

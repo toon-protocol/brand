@@ -2,7 +2,7 @@
 
 *Drafted 2026-10-15. Built on [positioning.md](positioning.md) (category: paid self-hosting), [context.md](context.md) and the competitor reports. This package is the source of truth for the brand. The current website's taglines ("Value, routed." and "Host it from home. Get paid by anyone.") are retired, and the site's copy gets rewritten from this file. Product facts and the terms defined in `toon_cli/CONTEXT.md` are not brand choices; they constrain everything here. Secondary audiences are inferred from context.md and the toon_cli README, because none were recorded: agents operating nodes themselves, and connector operators and protocol peers.*
 
-**Rule that applies to everything below**: TOON is on devnet with mock USDC. Proof marked **owed** stays out of public copy until it's real. Any page that says "paid" carries a visible **live: devnet · next: mainnet** label.
+**Rule that applies to everything below**: TOON settles in USDC on Base and Solana mainnet through the project's node, and devnet is for testing. Proof marked **owed** stays out of public copy until it's real. Any page that says "paid" carries a visible **live: Base and Solana mainnet · devnet for testing** label.
 
 ---
 
@@ -32,7 +32,7 @@ TOON is an open network that lets an app or agent on your own machine take paid 
 
 Rejected: anything with "Get paid." as its own sentence (Apify owns "Publish Actors. Get paid.", Nevermined owns "Agents get paid"). Also "The message is the money", which is too close to Interledger's "Making Money Move like Data" and needs explaining.
 
-**Recommended: #1, "Your machine. Paid per request."** It's the only option that holds both halves of the position. It's plain, and true on devnet with the label. Nobody in either competitor report uses "your machine". Use **#2 "Every request arrives paid."** as the product line under it in technical contexts (README, docs hero). Keep **#3** internal, as the strategic test every page should pass.
+**Recommended: #1, "Your machine. Paid per request."** It's the only option that holds both halves of the position. It's plain, and true on mainnet today, with the label. Nobody in either competitor report uses "your machine". Use **#2 "Every request arrives paid."** as the product line under it in technical contexts (README, docs hero). Keep **#3** internal, as the strategic test every page should pass.
 
 ---
 
@@ -56,7 +56,7 @@ The connector on your machine terminates payment the way nginx terminates SSL. Y
 
 **3. Nobody you have to sign up with.**
 Payment routes hop by hop between peered connectors, and anyone can run one. No merchant account, no facilitator, no platform cut, no payout schedule.
-*Proof*: **live** in the protocol. Each packet carries its own claim, so there's no invoice, settle round trip or facilitator call per request. No protocol fee. On devnet, a new agent node peers toward the network's hub, which is a connector like any other. Once there are independent connector operators, add their number, and until then don't imply there are many.
+*Proof*: **live** in the protocol. Each packet carries its own claim, so there's no invoice, settle round trip or facilitator call per request. No protocol fee. On devnet, a new agent node peers toward the network's hub, which is a connector like any other. The live mainnet node is the one the project runs. Once there are independent connector operators, add their number, and until then don't imply there are many.
 
 **4. One binary, built to be run by people and agents.**
 `toon` is the whole agent node: connector, supervisor and CLI. Every command is non-interactive and returns JSON, so an agent can operate it as easily as you can.
@@ -68,8 +68,8 @@ Payment routes hop by hop between peered connectors, and anyone can run one. No 
 |---|---|---|---|
 | 1 | Payment is terminated by a connector in front of the app, which receives plain HTTP | live | Message 2, docs hero |
 | 2 | A packet carries its own payment claim, with no invoice or settle round trip | live | Message 3, technical audiences |
-| 3 | Routes hop by hop across peered connectors and changes token along the way | live (devnet) | Message 3, protocol peers |
-| 4 | Settles on Base Sepolia and Solana devnet, so not tied to one chain | live (devnet, mock USDC) | Against L402 (Bitcoin only) |
+| 3 | Routes hop by hop across peered connectors and changes token along the way | live (two paid hops on mainnet; token change on devnet) | Message 3, protocol peers |
+| 4 | Settles in USDC on Base mainnet and Solana mainnet, so not tied to one chain. Base Sepolia and Solana devnet for testing | live | Against L402 (Bitcoin only) |
 | 4a | Every channel is an x402 batch-settlement channel on x402's audited contract; a stock x402 client can open one | live | Relating TOON to x402: "ILP routes, x402 settles" |
 | 4b | A new TOON app is a hidden service by default, at an `.anyone` address, with no open port | live | The mechanism behind message 1 |
 | 4c | MIT licensed, no protocol fee | live | Openness and "nobody takes a cut" |
@@ -77,8 +77,9 @@ Payment routes hop by hop between peered connectors, and anyone can run one. No 
 | 6 | Every command non-interactive with `--json`, stable documented exit codes | live | Agent audience |
 | 7 | Reads are free, writes are paid | live (project copy) | Explaining pricing to callers |
 | 8 | Website served from Arweave (`toon.ar.io`), not a rented host | live | Consistency proof: the brand practises the "no landlord" idea |
+| 8a | The site's own Arweave write was bought through the mainnet node, with receipts on the proof page that check against a public chain | live | The strongest proof that "paid" is real. Link the receipt |
 | 9 | A paid request answered from behind a home router with no port forwarding | **owed** | Message 1. The most important missing proof |
-| 10 | Number of independent connector operators, paid packets per day | **owed** (post-mainnet) | Replace adjectives with numbers once they're real |
+| 10 | Number of independent connector operators, paid packets per day | **owed** | Replace adjectives with numbers once they're real |
 
 ---
 
@@ -112,10 +113,10 @@ Nostr builders, Interledger people, and anyone who might run a connector or buil
 |---|---|---|---|
 | Website hero | "Your machine. Paid per request." over the supporting statement, then a real terminal session and a live/next block | Plain, confident, no superlatives | Short |
 | README / docs hero | "Every request arrives paid." plus one paragraph on the reverse-proxy model, then install | Engineer to engineer, spec-like | Medium |
-| Social bio | "Your machine. Paid per request. Open protocol, on devnet." | Dry, factual | Very short |
-| Email subject lines | Concrete change, not hype: "Your app can now take paid requests from behind a router" / "Mainnet: what changed" | Direct, newsy | Short |
+| Social bio | "Your machine. Paid per request. Open protocol, settling on Base and Solana." | Dry, factual | Very short |
+| Email subject lines | Concrete change, not hype: "Your app can now take paid requests from behind a router" / "The store is priced on mainnet" | Direct, newsy | Short |
 | Talks / pitch deck | Open on the three-product problem (tunnel + payment rail + public server) → one network → the route diagram → live/next | Measured, show-don't-tell | Medium |
-| Paid ads | Hold until the home-router demo and mainnet are live. Then "Charge for what runs on your machine." with a link to the demo | Blunt | Very short |
+| Paid ads | Hold until the home-router demo is live. Then "Charge for what runs on your machine." with a link to the demo | Blunt | Very short |
 | CLI / spinner | Real state words ("Routing", "Signing", "Settled"), no marketing | Literal | One word |
 
 ---
@@ -124,7 +125,7 @@ Nostr builders, Interledger people, and anyone who might run a connector or buil
 
 **Claims without proof**
 - "No open port" in ads or headlines before the public demo exists.
-- "Get paid" as a present-tense promise while it's devnet with mock USDC, unless it carries the live/next label.
+- "Get paid" without the live label, or in a way that implies traffic, earnings or operators beyond what the live node shows.
 - "Nobody in the middle" stated without qualification. Say "no company you sign up with; anyone can run a connector."
 - Network-size words ("global", "thousands of nodes"), logo walls, or headline stats before the numbers are real.
 

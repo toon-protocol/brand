@@ -4,7 +4,7 @@
 - **Name**: TOON Protocol
 - **Category**: Open payments and hosting protocol / developer infrastructure (value routing for apps and agents)
 - **Description**: An open network where your app or agent runs on your own machine and gets paid for every request, with no cloud, no domain and no open port.
-- **Stage**: Pre-launch. Live on a devnet with mock USDC, settling on Base Sepolia and Solana devnet; no mainnet yet.
+- **Stage**: Live on mainnet. The project's node at toon.ar.io settles in USDC on Base mainnet and Solana mainnet, and four apps are priced on it. Devnet (Base Sepolia, Solana devnet, test tokens) stays for testing. Independent mainnet operators are not yet shown.
 - **Website**: https://toon.ar.io (served from Arweave via the ArNS name `toon`)
 
 ## Audience
@@ -27,5 +27,5 @@
 - **Mission** (working draft): Make getting paid as simple as answering a request, so anyone (person or agent) can run a service from their own machine and earn from it directly.
 
 ## Goals
-- **Primary Goal**: Move settlement to mainnet and get the first real apps and agents earning per request.
+- **Primary Goal**: Get independent operators running nodes on mainnet, and real paid traffic to apps and agents beyond the project's own.
 - **Key Metrics**: Live paid apps, paid packets per day, independent operators/nodes, active payment channels.
