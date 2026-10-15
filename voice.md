@@ -109,7 +109,7 @@ Every page should leave the reader able to *do* something. Show the command, the
 | **Spending limit** | The most a wallet pays per command and per day | cap, budget |
 | Whoever pays | "anyone", "a client" (in code), "an agent" | customer, buyer, shopper |
 
-**Rule for "hidden service"**: It's the product's own defined term, so use it in docs, CLI output and body copy. On first use on any page, pair it with the plain meaning: *"reachable as a hidden service, with no open port and no public address."* Keep it out of headlines and ads, where a reader sees only the word, which reads as Tor and darknet. Never "onion" or ".onion"; the endpoint is an `.anyone` address.
+**Rule for "hidden service"**: It's the product's own defined term, so use it in docs, CLI output and body copy. On first use on any page, pair it with the plain meaning: *"reachable as a hidden service, with no open port and no public address."* Keep it out of headlines and ads, where a reader sees only the word, which reads as Tor and darknet. Never ".onion", and never "onion" in marketing copy: the endpoint is an `.anyone` address. The one exception is **onion endpoint**, the product's defined term for a hidden service's `.anyone` address (`toon_cli/CONTEXT.md`), which docs and CLI output keep.
 
 ---
 

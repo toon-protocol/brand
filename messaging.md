@@ -60,7 +60,7 @@ Payment routes hop by hop between peered connectors, and anyone can run one. No 
 
 **4. One binary, built to be run by people and agents.**
 `toon` is the whole agent node: connector, supervisor and CLI. Every command is non-interactive and returns JSON, so an agent can operate it as easily as you can.
-*Proof*: **live.** toon_cli v0.1.0 for Linux x86_64/aarch64. `toon up` installs a `systemd --user` service. `--json` on every command, with stable exit codes.
+*Proof*: **live.** toon_cli v0.2.0 for Linux x86_64/aarch64. `toon up` installs a `systemd --user` service. `--json` on every command, with stable exit codes.
 
 ### Level 4 — Proof point bank
 
@@ -73,7 +73,7 @@ Payment routes hop by hop between peered connectors, and anyone can run one. No 
 | 4a | Every channel is an x402 batch-settlement channel on x402's audited contract; a stock x402 client can open one | live | Relating TOON to x402: "ILP routes, x402 settles" |
 | 4b | A new TOON app is a hidden service by default, at an `.anyone` address, with no open port | live | The mechanism behind message 1 |
 | 4c | MIT licensed, no protocol fee | live | Openness and "nobody takes a cut" |
-| 5 | One `toon` binary, released for Linux x86_64 and aarch64, checksummed | live (v0.1.0) | Message 4, install pages |
+| 5 | One `toon` binary, released for Linux x86_64 and aarch64, checksummed | live (v0.2.0) | Message 4, install pages |
 | 6 | Every command non-interactive with `--json`, stable documented exit codes | live | Agent audience |
 | 7 | Reads are free, writes are paid | live (project copy) | Explaining pricing to callers |
 | 8 | Website served from Arweave (`toon.ar.io`), not a rented host | live | Consistency proof: the brand practises the "no landlord" idea |

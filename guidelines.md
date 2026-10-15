@@ -329,7 +329,7 @@ TOON is an open network that lets an app or agent on your own machine take paid 
 | **Reachable from anywhere, with no open port.** Your service can sit behind a home router and still answer the internet. | A new TOON app is a hidden service by default, at an `.anyone` address | **Live, shown on devnet** with test USDC ([demo](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat), [settlement tx](https://sepolia.basescan.org/tx/0x4b7f7860e3485d438008c7abcc77286f80a18aba3645395adc66ff72b54ff21a)). Link the demo wherever the claim leads, and say it's devnet |
 | **Your app never touches the money.** The connector terminates payment; your app gets plain HTTP that's already paid for. | The connector design. The app is any HTTP service | **Live** |
 | **Nobody you have to sign up with.** Payment routes hop by hop between peered connectors, and anyone can run one. | Packets carry their own claim. No protocol fee. MIT licence | **Live.** Don't imply many independent operators until there are some |
-| **One binary, built to be run by people and agents.** | `toon` v0.1.0 for Linux x86_64/aarch64, `--json` on every command, stable exit codes | **Live** |
+| **One binary, built to be run by people and agents.** | `toon` v0.2.0 for Linux x86_64/aarch64, `--json` on every command, stable exit codes | **Live** |
 
 The strongest live proof: the website's own Arweave write was bought through the mainnet node over 2 paid hops, and the receipts are on the proof page. Link the receipt.
 
@@ -419,7 +419,7 @@ TOON's real packaging.
 
 **Questions and approvals**: open an issue or PR on `toon-protocol/brand`. A new repo or launch states its architecture level (core, endorsed, built on TOON) in its first PR; see the checklist in architecture.md section 06.
 
-**Review**: at each minor release of `toon` (v0.2.0 is next) or every quarter, whichever comes first. Run a brand audit against this file then.
+**Review**: at each minor release of `toon` (v0.3.0 is next) or every quarter, whichever comes first. Run a brand audit against this file then.
 
 **Open items** (not decided anywhere yet)
 
