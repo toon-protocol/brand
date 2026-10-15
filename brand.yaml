@@ -19,7 +19,7 @@ artifacts:
   audience: true
   naming: false
   strategy: false
-  architecture: false
+  architecture: true
   identity: true
   voice: true
   messaging: true
