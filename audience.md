@@ -169,13 +169,13 @@ Segments 1 and 2 overlap heavily, and most early operators will be both.
 
 **Messaging**: Lead with the outcome and the absences: "Your machine. Paid per request. No cloud · no domain · no open port." Then one comparison (nginx terminating SSL), then the command. For agents and their builders, lead with the interface (`--json`, spending limits, exit codes). Keep the live label on anything that says "paid". This audience checks claims, and one overclaim costs the whole segment.
 
-**Channels**: Show HN, r/selfhosted, r/homelab and r/LocalLLaMA for segments 1 and 2, with a terminal recording and a link to the receipt rather than an announcement. Nostr for segments 2 and 4, where the idea already has believers with no brand. GitHub README and docs are the main landing page, ahead of the website. Hold paid ads until the home-router demo exists (messaging.md).
+**Channels**: Show HN, r/selfhosted, r/homelab and r/LocalLLaMA for segments 1 and 2, with a terminal recording and a link to the receipt rather than an announcement. Nostr for segments 2 and 4, where the idea already has believers with no brand. GitHub README and docs are the main landing page, ahead of the website. Paid ads can now link the [home-router demo](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat) (messaging.md).
 
 **Voice**: voice.md already fits: an engineer who runs the thing, short sentences, no hype. The audience-specific addition is to answer skeptics in public with numbers and commands. Expect "isn't this just Tor plus x402?" and "who runs the connectors?" on day one, and answer them plainly and in advance (positioning.md, red flag 1).
 
 **Product and experience**
 - **The first ten minutes decide everything.** `toon up` to a priced app on devnet should be one short page with no surprises. Treat install failures as brand failures.
-- **Ship the home-router demo.** It's the proof this audience will ask for first.
+- **Lead with the home-router demo.** It's the proof this audience will ask for first, and it's [shown on devnet](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat).
 - **Make the wallet feel safe.** Spending limits, `--yes` on every paying command, and clear key backup are trust features for Sam, not just safety features.
 - **Show the network honestly.** A public count of independent operators and paid packets per day, even when the numbers are small, earns more trust than a logo wall.
 - **macOS later.** Many homelab and agent builders develop on Macs. The Linux-only release limits who can try it on the machine they're sitting at.
