@@ -35,6 +35,14 @@ At 16px the wire is 0.4px tall and the gap between the bars is 0.4px, so the bar
 | 24–48px | **Two-bar mark**: drop the wire and end-blocks, keep the cream square, and widen the gap between the bars to at least 2px |
 | 16px | **Hand-hinted pixel version** on a 16×16 grid: two 5px bars with a 2px gap, a 2×2 cream square, and no wire. Draw it pixel by pixel, not by scaling |
 
+**Files** (in `assets/`; "tile" means the background is included)
+
+| Use | Light | Dark |
+|---|---|---|
+| Full mark, ≥ 64px | `toon-icon.svg`, `toon-icon-tile.svg` | `toon-icon-dark.svg`, `toon-icon-tile-dark.svg` |
+| Two-bar mark, 24–48px (48 grid, even coordinates so 24px lands on whole pixels) | `toon-icon-small.svg`, `toon-icon-small-tile.svg` | `toon-icon-small-dark.svg`, `toon-icon-small-tile-dark.svg` |
+| Favicon, 16px (pixel-placed, always on a tile) | `toon-icon-16.svg` | `toon-icon-16-dark.svg` |
+
 ### Colour variants (required)
 The charcoal bar is 1.23:1 against a dark background (`#1c1f24`), so in dark mode it disappears.
 
