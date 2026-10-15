@@ -1,6 +1,6 @@
 # Brand Architecture: TOON Protocol
 
-*Drafted 2026-10-15 from [context.md](context.md), [positioning.md](positioning.md), [messaging.md](messaging.md), [identity.md](identity.md), [voice.md](voice.md), and a survey of the 35 repositories in the `toon-protocol` GitHub org. Product terms come from `toon_cli/CONTEXT.md` and `TOON_Network/CONTEXT.md` and constrain the names below. Three decisions belong to the maintainer and are marked **decide** (see "Open decisions" at the end).*
+*Drafted 2026-10-15 from [context.md](context.md), [positioning.md](positioning.md), [messaging.md](messaging.md), [identity.md](identity.md), [voice.md](voice.md), and a survey of the 35 repositories in the `toon-protocol` GitHub org. Product terms come from `toon_cli/CONTEXT.md` and `TOON_Network/CONTEXT.md` and constrain the names below. Three open questions were decided by the maintainer on 2026-10-15 (see "Decisions" at the end).*
 
 ---
 
@@ -66,7 +66,7 @@ The org holds about 35 repositories. Most of them are parts of one product, a fe
 - Every stack component is a lowercase noun after TOON: the TOON connector, the TOON relay, the TOON store. There are no invented names inside the stack.
 - spaceturtle stays spaceturtle, endorsed as "an agent on TOON".
 - Third-party and experimental apps never take the TOON prefix. They say "runs on TOON".
-- TOON Network is renamed so the payment network keeps the word, and its place in the brand is decided before it gets marketing (**decide**, see below).
+- TOON Network is renamed **TOON Compute**, so the payment network keeps the word, and it stays off the master brand's front door until its promise is reconciled with the positioning (see Decisions).
 
 ---
 
@@ -89,10 +89,10 @@ TOON  ·  the open network: your machine, paid per request
 ├── Endorsed products ──────────────────────── own name, "on TOON"
 │   ├── spaceturtle           an agent on TOON
 │   │   └── spaceturtle panel   (descriptor under spaceturtle)
-│   └── rig                   git on TOON  (decide: endorsed or core)
+│   └── rig                   git on TOON
 │
-├── Compute marketplace ────────────────────── decide (see Open decisions)
-│   └── "TOON Network" → TOON Compute: provider, gateway, console
+├── Compute marketplace ────────────────────── descriptor, held off the front door
+│   └── TOON Compute (was "TOON Network"): provider, gateway, console
 │
 └── Built on TOON ──────────────────────────── ingredient, "runs on TOON"
     vibe_station · fractal · anytoon · tuzzy · slop_machine · buzz · any third-party app
@@ -104,7 +104,7 @@ TOON  ·  the open network: your machine, paid per request
 |---|---|---|---|
 | **Core stack** | Lowercase descriptor. In prose, "the TOON connector" on first use, then "the connector". Package `@toon-protocol/<descriptor>`, image `ghcr.io/toon-protocol/<descriptor>` | The master identity, unchanged. Packet symbol, Plex, Paper/Ink/Gold. A component may add a line icon from the identity.md set, never its own logo | Inherits fully. Each README opens on the component's job in one bold line, then the nginx analogy where it applies |
 | **Endorsed** | Own name, always set as the brand writes it (spaceturtle is all lowercase). Endorsement line: "an agent on TOON" / "git on TOON" | Its own symbol and palette are allowed. It must share **Gold `#c9a24a` as the only accent for paid/settled state** and **Plex** for type, and carry the TOON symbol small in its footer or about screen | Inherits the positioning and the honesty rules (live/owed, mainnet label). It may have its own personality: spaceturtle can be a turtle, TOON cannot |
-| **Compute marketplace** | Pending the decision. If kept: "TOON Compute", parties named as in its glossary | Master identity | Its own promise, which must not contradict "TOON never holds the money" |
+| **Compute marketplace** | "TOON Compute", parties named as in its glossary (provider, tenant, workload, lease) | Master identity | Its own promise, which must not contradict "TOON never holds the money" |
 | **Built on TOON** | Its own name. May say "runs on TOON", "built on TOON" or "behind the TOON connector". Never "TOON <X>", never the TOON symbol as its logo | Independent. May use an approved "runs on TOON" badge (symbol + wordmark, Ink or Paper, no Gold) | Independent. Must not imply TOON operates, endorses or holds funds for it |
 
 ---
@@ -179,11 +179,13 @@ TOON  ·  the open network: your machine, paid per request
 
 ---
 
-## Open decisions
+## Decisions
 
-1. **decide: What TOON Network becomes.** The recommendation is to rename it **TOON Compute**, so "the TOON network" means one thing, the payment network, and to keep it off the master brand's front door (homepage, tagline, social bio) until its promise is reconciled with "TOON is not for people who want someone else to run their code." The alternative is to treat it as a separate, endorsed brand with its own name ("a compute market on TOON"), which would keep the master brand clean but costs a second brand to market. Which way it goes depends on whether compute is the project's next core bet or a side line.
-2. **decide: rig, endorsed or core.** It's a forge-like product with its own surface, which argues for endorsed. It's also the write path for git on TOON, which argues for core ("TOON git"). Recommended: endorsed, as "rig, git on TOON", because it has a UI and an audience (people publishing repos) of its own.
-3. **decide: spaceturtle's endorsement line.** Recommended: "an agent on TOON". It's literal, keeps TOON in the sentence, and matches the README's existing first line.
+Decided by the maintainer on 2026-10-15.
+
+1. **TOON Network becomes TOON Compute.** "The TOON network" now means one thing, the payment network. TOON Compute stays off the master brand's front door (homepage, tagline, social bio) until its promise is reconciled with "TOON is not for people who want someone else to run their code." Revisit if compute becomes the project's next core bet. The rename still has to reach the `TOON_Network` repo name, its README and glossary, and the `provider`, `gateway` and `console` READMEs.
+2. **rig is endorsed:** "rig, git on TOON". It has a UI and an audience of its own (people publishing repos). Written lowercase; "The Rig" in its README becomes "rig".
+3. **spaceturtle's endorsement line is "an agent on TOON".** It's literal, keeps TOON in the sentence, and matches the README's existing first line.
 
 ## Red flags
 
