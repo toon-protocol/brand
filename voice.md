@@ -145,7 +145,7 @@ Every page should leave the reader able to *do* something. Show the command, the
 | Channel | Tone adjustment | Example |
 |---|---|---|
 | Website homepage | The tightest version. Outcome plus absences, then the command | "Your machine. Paid per request. No cloud · no domain · no open port." |
-| Docs / README | Spec voice. Define a term once, then use it. Show input and printed output | "`join` peers your connector toward the network's hub and opens the channel that pays for the hop." |
+| Docs / README | Spec voice. Define a term once, then use it. Show input and printed output | "`join` peers your connector toward the project's connector and opens the channel that pays for the hop." |
 | Social media | Changelog voice. One shipped fact per post, with a command or number. Dry, no emoji, no hashtags beyond one | "Every `toon` command now takes `--json` and prints exactly one JSON document." |
 | Email | Newsy and short. Subject is the change, body is what to run | Subject: "The store is priced on mainnet." Body: "Here's the price and the one command to pay it." |
 | Support / Discord | Plain and patient, and precise about state. Ask for `toon status --json` before guessing | "Can you paste `toon status --json`? That shows which connector stopped and how often it restarted." |
