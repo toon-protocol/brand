@@ -184,7 +184,7 @@ TOON  ·  the open network: your machine, paid per request
 
 Decided by the maintainer on 2026-10-15.
 
-1. **TOON Network becomes TOON Compute.** "The TOON network" now means one thing, the payment network. TOON Compute stays off the master brand's front door (homepage, tagline, social bio) until its promise is reconciled with "TOON is not for people who want someone else to run their code." Revisit if compute becomes the project's next core bet. The rename still has to reach the `TOON_Network` repo name, its README and glossary, and the `provider`, `gateway` and `console` READMEs.
+1. **TOON Network becomes TOON Compute.** "The TOON network" now means one thing, the payment network. TOON Compute stays off the master brand's front door (homepage, tagline, social bio) until its promise is reconciled with "TOON is not for people who want someone else to run their code." Revisit if compute becomes the project's next core bet. The rename covers prose, UI strings and package descriptions in `TOON_Network`, `provider`, `gateway`, `console` and `rig`. Identifiers keep their names: the `TOON_Network` repo, the spec's file name, the `toon.network` event label, and crate and package names.
 2. **rig is endorsed:** "rig, git on TOON". It has a UI and an audience of its own (people publishing repos). Written lowercase; "The Rig" in its README becomes "rig".
 3. **spaceturtle's endorsement line is "an agent on TOON".** It's literal, keeps TOON in the sentence, and matches the README's existing first line.
 
