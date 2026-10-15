@@ -48,7 +48,7 @@ Rejected: anything with "Get paid." as its own sentence (Apify owns "Publish Act
 
 **1. Reachable from anywhere, with no open port.**
 Your service can sit behind a home router and still answer the internet. You don't need a cloud account, a domain or port forwarding.
-*Proof*: **mechanism live, demo owed.** A new TOON app is reachable as a hidden service by default, at an `.anyone` address inside the Anyone overlay, so it needs no open port and no public address. What's missing is a public, reproducible demo: a laptop on residential internet, no port forwarding, an outside agent paying and getting a response. Don't use this message in paid channels until the demo exists.
+*Proof*: **live, shown on devnet.** A new TOON app is reachable as a hidden service by default, at an `.anyone` address inside the Anyone overlay, so it needs no open port and no public address. A public, reproducible demo shows it: an app in a VM behind NAT, with no port forwarded, paid from a machine on another network through the devnet relay ([demo](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat), [settlement tx](https://sepolia.basescan.org/tx/0x4b7f7860e3485d438008c7abcc77286f80a18aba3645395adc66ff72b54ff21a)). It's one run, on devnet with test USDC, through a relay the project runs. Say "shown on devnet" where it matters, and link the demo.
 
 **2. Your app never touches the money.**
 The connector on your machine terminates payment the way nginx terminates SSL. Your app gets plain HTTP that's already paid for, with no SDK, no wallet and no billing code.
@@ -78,7 +78,7 @@ Payment routes hop by hop between peered connectors, and anyone can run one. No 
 | 7 | Reads are free, writes are paid | live (project copy) | Explaining pricing to callers |
 | 8 | Website served from Arweave (`toon.ar.io`), not a rented host | live | Consistency proof: the brand practises the "no landlord" idea |
 | 8a | The site's own Arweave write was bought through the mainnet node, with receipts on the proof page that check against a public chain | live | The strongest proof that "paid" is real. Link the receipt |
-| 9 | A paid request answered from behind a home router with no port forwarding | **owed** | Message 1. The most important missing proof |
+| 9 | A paid request answered from behind a home router with no port forwarding | live (shown on devnet, test USDC: [demo](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat), [settlement tx](https://sepolia.basescan.org/tx/0x4b7f7860e3485d438008c7abcc77286f80a18aba3645395adc66ff72b54ff21a)) | Message 1. Link the demo |
 | 10 | Number of independent connector operators, paid packets per day | **owed** | Replace adjectives with numbers once they're real |
 
 ---
@@ -88,7 +88,7 @@ Payment routes hop by hop between peered connectors, and anyone can run one. No 
 ### For independent developers and agent builders (primary)
 - **What they care most about**: Getting a thing they built earning without becoming an ops team or a business. Keeping control of their code, price and money.
 - **How to lead**: Lead with the outcome and what they don't need. *"Your machine. Paid per request. No server, no domain, no open port."* Then the nginx analogy, then the install command.
-- **Proof that lands hardest**: The home-router demo (owed), "your app never touches the money", and a real `toon up` terminal session.
+- **Proof that lands hardest**: The home-router demo ([shown on devnet](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat)), "your app never touches the money", and a real `toon up` terminal session.
 - **Avoid**: Protocol theory first, token talk, and anything implying TOON hosts or holds funds. Don't make agents the whole story, because people run models and APIs too.
 
 ### For agents operating or calling agent nodes (secondary)
@@ -116,7 +116,7 @@ Nostr builders, Interledger people, and anyone who might run a connector or buil
 | Social bio | "Your machine. Paid per request. Open protocol, settling on Base and Solana." | Dry, factual | Very short |
 | Email subject lines | Concrete change, not hype: "Your app can now take paid requests from behind a router" / "The store is priced on mainnet" | Direct, newsy | Short |
 | Talks / pitch deck | Open on the three-product problem (tunnel + payment rail + public server) → one network → the route diagram → live/next | Measured, show-don't-tell | Medium |
-| Paid ads | Hold until the home-router demo is live. Then "Charge for what runs on your machine." with a link to the demo | Blunt | Very short |
+| Paid ads | "Charge for what runs on your machine." with a link to the [home-router demo](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat). Say it's shown on devnet | Blunt | Very short |
 | CLI / spinner | Real state words ("Routing", "Signing", "Settled"), no marketing | Literal | One word |
 
 ---
@@ -124,7 +124,7 @@ Nostr builders, Interledger people, and anyone who might run a connector or buil
 ## 07 — Things not to say
 
 **Claims without proof**
-- "No open port" in ads or headlines before the public demo exists.
+- "No open port" without a link to the demo, or as if it were shown on mainnet. It's shown on devnet.
 - "Get paid" without the live label, or in a way that implies traffic, earnings or operators beyond what the live node shows.
 - "Nobody in the middle" stated without qualification. Say "no company you sign up with; anyone can run a connector."
 - Network-size words ("global", "thousands of nodes"), logo walls, or headline stats before the numbers are real.

@@ -191,6 +191,6 @@ Decided by the maintainer on 2026-10-15.
 ## Red flags
 
 1. **The name collision is live now.** spaceturtle's README and `TOON_Network` already use the same words for two different things. Every week it stays, more docs and posts repeat it.
-2. **Endorsing spaceturtle means spaceturtle's claims are TOON's claims.** "No open port" sits in its README header, and messaging.md says that claim is *owed* until the home-router demo exists. An endorsed product doesn't get a looser honesty rule than the master brand.
+2. **Endorsing spaceturtle means spaceturtle's claims are TOON's claims.** "No open port" sits in its README header, and messaging.md marks that claim live but [shown on devnet](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat) only, so spaceturtle carries the same scope. An endorsed product doesn't get a looser honesty rule than the master brand.
 3. **Experiments with jokey names sit in the same org.** `slop_machine` ("Make money shipping slop") lives under `toon-protocol`. Built-on-TOON status separates it in copy, but a reader browsing the org sees one project. Consider moving experiments to a separate org or marking them clearly as experiments in their descriptions.
 4. **Most repos have no description on GitHub** (`toon_cli`, `connector`, `TOON_Network`, `anytoon`, `tuzzy`, `vibe_station` and others). The org page is often the first thing a developer sees, and an empty description there wastes it. Each core repo should carry its one-line job from section 03.
