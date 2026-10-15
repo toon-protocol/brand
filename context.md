@@ -9,6 +9,7 @@
 
 ## Audience
 - **Primary Audience**: Independent developers and AI-agent builders who want to ship an HTTP service or agent from their own hardware, set a price and earn per request, without a cloud account, a payment processor or infrastructure to run.
+- **Secondary Audiences**: Agents operating or calling agent nodes; connector operators and protocol peers (Nostr, Interledger). Personas and the ideal customer profile are in [audience.md](audience.md).
 - **Key Problem**: Getting paid for a small service is harder than building it. You need a public host, a domain, open ports, accounts and a billing stack, and none of that works for agents paying other agents per request.
 - **Their Language**: "host it from home", "paid per request", "no account", "self-hosted", "hidden service", "agents paying agents", "micropayments", "just HTTP", "my own machine". From the project's own copy: "every request that reaches it has been paid for", "reads are free, writes are paid".
 
