@@ -5,7 +5,7 @@ export const BRAND = {"name": "TOON Protocol", "slug": "toon", "url": "toon.ar.i
 export const STOPS = ["#2C2410", "#50411E", "#836930", "#C9A24A", "#D5B672", "#E4D0A4", "#F4ECDB", "#FFFFFF"]
 
 // Word color in the desktop app: one color, readable on light and dark themes.
-export const DESKTOP_WORD = "#A8842C"
+export const DESKTOP_WORD = "#7D5F17"
 
 // One word per turn phase (Spinner.props.mode).
 export const WORDS: Record<string, string[]> = {"thinking": ["Thinking", "Reading the spec", "Working it out"], "tool-use": ["Running", "Reading", "Checking", "Routing"], "tool-input": ["Writing", "Signing"], "responding": ["Writing", "Answering", "Wrapping up"], "requesting": ["Connecting", "Opening a channel", "Peering"]}
