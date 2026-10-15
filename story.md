@@ -36,7 +36,7 @@ A connector sits on your machine, in front of your app. It handles payment the w
 
 Payments route hop by hop between peered connectors, the way Interledger routes packets, and they can change token along the way. Each packet carries its own claim, so there's no invoice and no settle round trip per request. Settlement runs on x402 channels, in USDC on Base and Solana. Interledger routes and x402 settles. I didn't invent either one. What TOON adds is putting them together on your own machine, as one binary.
 
-By default a new TOON app is reachable as a hidden service, with no open port and no public address, so it can sit behind a home router. You set the price. Nobody takes a cut, because there's no protocol fee and no company you have to sign up with. Anyone can run a connector.
+By default a new TOON app is reachable as a hidden service, with no open port and no public address, so it can sit behind a home router. That's been shown on devnet: in a [public demo](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat), an app in a VM behind NAT, with no port forwarded, answered a paid request from another network, and the payment [settled on Base Sepolia](https://sepolia.basescan.org/tx/0x4b7f7860e3485d438008c7abcc77286f80a18aba3645395adc66ff72b54ff21a). You set the price. Nobody takes a cut, because there's no protocol fee and no company you have to sign up with. Anyone can run a connector.
 
 ### Who it's for
 
@@ -89,8 +89,8 @@ It's live on Base and Solana mainnet, with devnet for testing. Your machine, you
 
 - **Where each version goes**: Version 1 is the About page. Version 2 is a homepage section below the hero, a pitch opener or a talk intro. Version 3 is for podcasts, bios, the first reply in a thread and the opening line of a talk.
 - **Live label**: Any page carrying Version 1 or 2 also carries **live: Base and Solana mainnet · devnet for testing** (see [messaging.md](messaging.md)).
-- **Paid channels**: "behind a home router" and "no open port" describe the live mechanism, but the public home-router demo is still owed. Keep those phrases out of ads and headlines until it exists. In the story they're body copy, and "hidden service" is glossed on first use, as [voice.md](voice.md) requires.
-- **Update triggers**: when independent mainnet operators exist, replace the "Where it is now" paragraph with their number. When the home-router demo exists, link it from "What I built instead".
+- **Paid channels**: "behind a home router" and "no open port" describe the live mechanism, and the [home-router demo](https://github.com/toon-protocol/echo-merchant/tree/main/demo/behind-nat) shows it on devnet. They can lead in ads and headlines if the demo is linked and the copy says devnet. "Hidden service" stays out of headlines, and in body copy it's glossed on first use, as [voice.md](voice.md) requires.
+- **Update triggers**: when independent mainnet operators exist, replace the "Where it is now" paragraph with their number. When the home-router demo runs on mainnet, drop "on devnet" from "What I built instead" and update the link.
 - **Third-person adaptation**: for press or partner pages, change "I" to "Jonathan Green" on first mention and use the pronouns Jonathan states after that. Don't guess them.
 
 ## Details that would sharpen it
